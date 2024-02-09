@@ -18,6 +18,6 @@ resource "aws_instance" "app_server_check" {
   instance_type = "t3.micro"
 
   tags = {
-    Name = "ExampleAppServerCheckInstance"
+    Name = var.instance_name
   }
 }
